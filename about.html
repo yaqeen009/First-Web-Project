@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Of Art and Technnology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="sub-header"> 
+      <nav>
+          <a href="index.html"><img src="logo.png" ></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="join.html">JOIN US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+
+     <h1>About Us</h1>
+  
+
+  </section>
+  
+  
+  <!---------About-Us---->
+  <section class="about_us">
+    <div class="row">
+        <div class="about_col">
+            <h1>We are University of Art and Tech</h1>
+               <p>Our University was established in 1905, by a group 
+                of philanthropists for orphan students in Europe with great potentials.
+                The university later became very popular due to the good 
+                performaces made by their students.Now our
+                university has six campuses located on each continent and
+                 is still plannig to grow bigger and better!</p> 
+                <a href="" class="hero redl">EXPLORE NOW</a>
+        </div>
+        <div class="about_col">
+            <img src="about.jpg">
+        </div>
+    </div>
+  </section>
+   
+
+
+  <!--------JavaScript for Toggle Menu------->
+
+  <script>
+      var navLinks = document.getElementById("navLinks")
+      function showMenu(){
+          navLinks.style.right = "0";
+      }
+      function hideMenu(){
+          navLinks.style.right = "-200px";
+      }
+  </script>
+</body>
+</html>

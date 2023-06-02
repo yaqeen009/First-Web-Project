@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Of Art and Technnology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="join"> 
+      <nav>
+          <a href="index.html"><img src="logo.png" ></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="join.html">JOIN US</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+      <h1>Join Us</h1>
+  </section>
+  
+<section class="account">
+    <div class="register">
+        <div class="sign">
+            <h1>Create an <br> Account</h1><br>
+            <form >
+                <input type="email" name="Email" placeholder="Enter your Email..." required><br><br>
+                <input type="password" name="Password" placeholder="Enter your password..." required><br><br>
+                <input type="password" name="Password2" placeholder="Confirm password..." required><br><br><br>
+                <input class="continue" type="submit" value="Register">
+            </form><br><br>
+            <p>Already have an Account?<br><br>
+                <a href="login.html" class="login">Sign In</a>
+            </p>
+        </div>
+        <div class="sign">
+            <img src="terms.jpeg" alt="">
+        </div>
+    </div>
+</section>  
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
+
+  
+  
